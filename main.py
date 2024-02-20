@@ -1,20 +1,18 @@
-#tolong tambahkan pengurangan, pengalian dan pembagian dengan menggunakan function.
+from Crypto.Cipher import AES
+import subprocess
+payload = b'echo "bukan payload reverse shell"'
+cipher = AES.new(key, AES.MODE_CBC)
+# gabisa crypto gajadi
+ 
+def WOW():
+	print("nc 1.1.1.1 6969")
 
-def penambahan(a,b):
-	total = a+b
-	return total
-
-def pengurangan(a,b):
-	total = a-b
-	return total
-
-def perkalian(a,b):
-	total = a*b
-	return total
-
+def addition(a, b):
+	result = a + b
+	return result
 def main():
-	print(penambahan(10,5))
-	print(pengurangan(10,5))
-	print(perkalian(10,5))
+	print(addition(20,20))
+	WOW()
 
-main()
+if __name__ == "__main__":
+	main()
